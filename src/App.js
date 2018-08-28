@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Button from '@material-ui/core/Button';
+
 
 type Props = {};
 
@@ -16,6 +18,9 @@ class App extends Component<Props> {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <Button variant="contained" color="primary">
+        Hello world!
+        </Button>
       </div>
     );
   }

@@ -3,21 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^3.0.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.5"
   },
   "scripts": {
-    "start": "$(npm bin)/flow && react-scripts start",
-    "build": "$(npm bin)/flow && react-scripts build",
-    "test": "$(npm bin)/flow && react-scripts test --env=jsdom",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "flow": "$(npm bin)/flow",
-    "postinstall": "$(npm bin)/flow-typed install"
+    "flow": "./node_modules/.bin/flow",
+    "postinstall": "./node_modules/.bin/flow-typed install"
   },
   "devDependencies": {
-    "flow-bin": "^0.74.0",
-    "flow-typed": "^2.4.0",
+    "flow-bin": "^0.79.1",
+    "flow-typed": "^2.5.1",
     "jest": "^20.0.4",
     "jest-cli": "^20.0.4"
   }
